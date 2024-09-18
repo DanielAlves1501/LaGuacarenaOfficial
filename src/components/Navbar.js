@@ -112,12 +112,13 @@ const Navbar = ({ buttons = true }) => {
                 </li>
                 {navBarSections.map((section, index) => (
                   <li key={index}>
-                    <Link
-                      href={`/menu/${section.pathname}`}
+                    <a
+                      href={`/assets/menuPdf/${section.pathname}.pdf`}
+                      target="_blank"
                       onClick={handleMobileMenu}
                     >
                       {section.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
