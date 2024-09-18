@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://laguacarena.com
+
+# Sitemaps
+Sitemap: https://laguacarena.com/sitemap.xml
