@@ -14,9 +14,9 @@ const MainDishes = () => {
           Descubre nuestros platos más <br />
           <span className="text-secondary">destacados</span>
         </h2>
-        <div className="flex flex-col items-center justify-center gap-16 text-center xs:gap-10 sm:flex-row sm:items-start  ">
+        <div className="flex flex-col items-center justify-center gap-16 text-center xs:gap-10 sm:flex-row sm:items-start">
           <article className="w-full sm:w-[30%] flex flex-col items-center">
-            <div className="w-[60%] mx-auto flex justify-center items-center xs:h-[200px] sm:w-full  ">
+            <div className="w-[60%] mx-auto flex justify-center items-center xs:h-[200px] sm:w-full">
               <Image
                 src={polloBroaster}
                 alt="Pollo Broaster"
@@ -25,10 +25,10 @@ const MainDishes = () => {
             </div>
             <h3 className="subtitle text-center mt-5 xs:mt-10">Pollos</h3>
             <p className="description-text">
-              "Descubre el irresistible sabor de nuestro Pollo Broaster y Asado,
+              Descubre el irresistible sabor de nuestro Pollo Broaster y Asado,
               marinado con una mezcla secreta de especias que le da un toque
               único y delicioso. ¡En La Guacarena, cada bocado es una fiesta de
-              sabor!"
+              sabor!
             </p>
             <a href="/assets/menuPdf/CarnesPollos.pdf" target="_blank">
               <Btn text="Ver mas" btnExtraStyles="px-3 mt-5 font-semibold" />
@@ -47,7 +47,7 @@ const MainDishes = () => {
             </p>
             <a href="/assets/menuPdf/EspetadasParrillas.pdf" target="_blank">
               <Btn text="Ver mas" btnExtraStyles="px-3 mt-5 font-semibold" />
-            </a>{" "}
+            </a>
           </article>
 
           <article className="w-full flex flex-col items-center sm:w-[30%]">

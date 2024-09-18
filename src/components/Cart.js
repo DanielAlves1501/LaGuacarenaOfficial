@@ -27,7 +27,7 @@ const Cart = ({ isCartOpen, setIsCartOpen }) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isCartOpen]);
+  }, [isCartOpen, handleClickOutside]);
 
   return (
     <AnimatePresence>
