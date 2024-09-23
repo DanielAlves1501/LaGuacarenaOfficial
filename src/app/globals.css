@@ -6,7 +6,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 .main-container {
-  @apply max-w-[1280px] w-[95%] mx-auto overflow-hidden;
+  @apply max-w-[1280px] w-[95%] mx-auto;
 }
 
 .title {
@@ -23,4 +23,108 @@
 
 .body-text {
   @apply text-bodySm font-light sm:text-body;
+}
+
+/* Effects */
+
+@keyframes moveUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(300%);
+  }
+}
+
+@keyframes drop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    scale: 0.7;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-title {
+  animation: moveUp linear;
+  animation-timeline: scroll();
+}
+
+.nav-link {
+  animation: drop 2s forwards;
+}
+
+.mainDish-card {
+  animation: fadeIn linear forwards;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 100px;
+}
+
+.reveal-effect {
+  animation: reveal linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 400px;
+}
+
+.popUp-effect {
+  animation: popUp linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 100px;
+}
+
+.slideIn-effect {
+  animation: slideIn linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 300px;
 }

@@ -43,7 +43,11 @@ const Navbar = ({ buttons = true }) => {
 
         <ul className="flex flex-wrap justify-center gap-5 font-extralight">
           {navBarSections.map((section, index) => (
-            <li key={index}>
+            <li
+              className="nav-link translate-y-[-100px]"
+              style={{ animationDelay: `${index * 0.2}s` }} // Ajusta el delay aquí
+              key={index}
+            >
               <a
                 href={`/assets/menuPdf/${section.pathname}.pdf`}
                 target="_blank"

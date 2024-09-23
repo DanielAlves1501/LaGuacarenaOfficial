@@ -4,8 +4,10 @@ const Contact = () => {
   return (
     <section className="bg-primary py-[50px] ">
       <div className="main-container">
-        <h2 className="title text-right flex mb-5 ">Contactanos</h2>
-        <p className="">
+        <h2 className="reveal-effect title text-right flex mb-5 ">
+          Contactanos
+        </h2>
+        <p className="reveal-effect">
           Visitanos cuando gustes y vive la experiencia de
           <span className="text-secondary"> Asados La Guacareña</span>
         </p>
@@ -14,7 +16,7 @@ const Contact = () => {
           {/* LEFT SIDE */}
           <div className=" w-full md:w-[30%] description-text">
             {/* Email */}
-            <div className="mt-10">
+            <div className="mt-10 slideIn-effect">
               <i className="fa-solid fa-envelope mb-5 text-[22px]"></i>
               <h3 className="subtitle ">Email</h3>
               <p className=" leading-8">
@@ -26,7 +28,7 @@ const Contact = () => {
             </div>
 
             {/* Phones */}
-            <div className="mt-10">
+            <div className="mt-10 slideIn-effect">
               <i className="fa-solid fa-phone mb-5 text-[22px]"></i>
               <h3 className="subtitle  ">Teléfono</h3>
               <p>
@@ -37,7 +39,7 @@ const Contact = () => {
             </div>
 
             {/* Location */}
-            <div className="mt-10">
+            <div className="mt-10 slideIn-effect">
               <i className="fa-solid fa-location-dot mb-5 text-[22px]"></i>
               <h3 className="subtitle ">Ubicación</h3>
               <p className=" leading-8 mb-5">

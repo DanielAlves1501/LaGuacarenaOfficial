@@ -5,7 +5,7 @@ export const Hero = () => {
     <section className="relative h-screen w-full flex justify-center items-center">
       <HeroBg />
       <div className="h-full w-full absolute flex justify-center items-center">
-        <div className="text-center w-[80%] lg:w-[55%]">
+        <div className="hero-title text-center w-[80%] lg:w-[55%]">
           <h1 className="text-heroTitleSm font-playfair sm:text-heroTitle font-semibold leading-[82px]">
             La Guacareña
           </h1>
