@@ -91,6 +91,7 @@ const Navbar = ({ buttons = true }) => {
           <Btn
             text="Menu"
             btnExtraStyles="w-[70px] bg-transparent border-2 mr-5"
+            handleClick={() => window.open("/assets/menuPdf/MenuGuacarena.pdf")}
           />
           {/* <Btn
             text="Cart"
